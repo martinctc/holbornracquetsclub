@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Holborn Racquets Club</h1>
+<p>Welcome to our website.</p> 
+<hr>
+<h4>Please login below:</h4>
+<form action="" method="post">
+  <p>Username:</p><input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+  <br><br>
+  <p>Password:</p><input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+  <br><br>
+  <input class="btn btn-primary" type="submit" value="Login">  
+</form>
+
+{% endblock %}

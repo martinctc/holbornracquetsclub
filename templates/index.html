@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Welcome to Flask!</h1>
+<br>
+<p>Click <a href="/">here</a> to go home.</p>
+<br>
+<a href="/welcome">Welcome</a>
+<br>
+<a href="/about">About</a>
+<br>
+<a href="/logout">Logout</a>
+<br><br>
+<h3>Players:</h3>
+{% for player in players %}
+  <strong>ID:</strong> {{ player.playerid }} <br>
+  <strong>Player name:</strong> {{ player.playername }} <br>
+<br>
+{% endfor %}
+
+{% endblock %}

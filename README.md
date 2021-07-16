@@ -8,4 +8,5 @@ Key features:
 - User Authentication
 - Connection to SQLite database
 - Bootstrap design
+- Unit testing
 - Write access to database (enter squash match scores)

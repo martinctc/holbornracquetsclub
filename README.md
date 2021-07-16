@@ -10,3 +10,11 @@ Key features:
 - Bootstrap design
 - Unit testing
 - Write access to database (enter squash match scores)
+
+## Notes
+
+Deviating from the Heroku deployment set-up, `waitress` is used instead of the `gunicorn` module due to cross-platform limitations. The code used instead was:
+
+```
+waitress-serve --listen=127.0.0.1:4000 app:app
+```
